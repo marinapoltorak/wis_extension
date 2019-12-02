@@ -1,42 +1,58 @@
--html {
+html {
   background-image: url("../images/morocco.png");
+  color: #2C3142;
 }
 #app {
-  max-width: 1000px;
+  min-width: 100vw;
   min-height: 100vh;
-  padding: 2px;
-  display: flex;
-  background-image: url("../images/stucco.png");
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
 }
 
-body {
-  background-image: url("../images/stucco.png");
+.navMenu {
+  /* background-image: url("../images/morocco-blue.png"); */
+background: lemonchiffon !important;
+}
+
+.navMenu a {
+  color: #2C3142 !important;
+  font-size: 50px;
+  font-family: 'Chonburi', cursive;
+}
+
+.navMenu a:hover {
+  color: #E8988A !important;
+  background-color: rgba(245, 243, 244, 0.67);
+}
+
+.material-icons.pointer {
+  cursor: pointer;
+}
+.material-icons:hover {
+  cursor: pointer;
+}
+
+.navIcon {
+  color: #75576E;
 }
 
 .bio {
   font-size: 20px;
-  max-width: 1000px;
-  min-width: 100vh;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  color: #100f1a;
   font-family: 'Sulphur Point', sans-serif;
 }
 
-.field {
-  font-size: 30px;
-  padding: 5px;
-  margin: 5px;
-  color: #100f1a;
-  flex-direction: column;
-  font-style: italic;
+.name_and_field {
+  margin: 10px;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  font-size: 35px;
   font-family: 'Chonburi', cursive;
+}
+
+.field {
+  color: #4BADC4;
+  font-style: italic;
 }
 
 
@@ -47,23 +63,21 @@ main {
   align-items: center;
   width: 75vw;
   margin: auto;
-  background-image: url("../images/stucco.png");
+  padding: 20px 20px;
+  background-color: rgba(245, 243, 244, 0.67);
   flex: 1 0 auto;
 }
 
 .loading-page {
-  background-image: url("../images/morocco-blue.png");
   font-family: 'Vast Shadow', cursive;
   font-size: 75px;
 }
 @media (max-width: 800px) {
-  main .card-Horizontal {
+  main  {
     flex-direction:column;
     min-width: 600px;
   }
-  body {
-    min-width: 600px;
-  }
+
   .big_stuff {
     margin: 2px;
   }
@@ -79,7 +93,7 @@ main {
 .big_stuff {
   font-size:25px;
   padding: 2px;
-  color: #100f1a;
+  color: #E8988A;
   font-weight: bolder;
   justify-content: space-between;
   align-items: center;
@@ -96,72 +110,10 @@ nav {
   justify-content: space-between;
 }
 
-a.brand-logo {
-  color: #100f1a;
-  font-size: 30px;
-  margin-left: 15px;
-  font-family: 'Vast Shadow', cursive;
-}
 
-.name_and_field {
-  margin:5px;
-  min-height: 10vh;
-  max-height: 10vh;
-  max-width: 800px;
-  min-width: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: flex-end;
-  font-size: 30px;
-  align-items: center;
-  color: #100f1a;
-  font-family: 'Chonburi', cursive;
-}
-
-
-#slide-out {
-  background-color: lemonchiffon;
-  color: black;
-  display:flex;
-  flex-direction:column;
-  justify-content: flex-start;
-  align-items:flex-start;
-  padding: 5px;
-
-}
-
-.card-image {
-  width:400px;
-  height:400px;
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items:center;
-}
 img {
   max-width:600px;
   max-height:400px;
-}
-
-#slide-out a {
-  color:black;
-  font-size: 10px;
-}
-
-#slide-out button.btn {
-  background-color: #625b75;
-  height: 100px;
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items:center;
-  padding: 6px;
-  margin:10px;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  font-size: 50px;
 }
 
 button.sidenav-trigger {

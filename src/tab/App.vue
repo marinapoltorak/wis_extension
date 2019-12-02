@@ -1,10 +1,22 @@
 <template>
   <div>
+    <div class="reload">
+      <a v-on:click="getScientist()"><i class="material-icons">refresh</i></a>
+    </div>
     <div class="loading-page" v-if="loading">
       <p>Loading...</p>
     </div>
     <div v-else>
-      <slider :width="300" format="push" direction="left" :opacity="0.15" :links="[{'id': 1, 'text': 'More Information', 'url': scientist.sci_link}, {'id': 2, 'text': 'Author', 'url': 'https://github.com/marinapoltorak'}]"></slider>
+      <slider :width="600" format="push" direction="left" :opacity="0.15" :links="[
+      {'id': 1, 'text': 'More Information about this scientist', 'url': scientist.sci_link},
+      {'id': 2, 'text': 'Association For Women In Science', 'url': 'https://www.awis.org/'},
+      {'id': 3, 'text': 'List of Women Scientist, 21st Century', 'url': 'https://en.wikipedia.org/wiki/List_of_female_scientists_in_the_21st_century'},
+      {'id': 4, 'text': 'List of Female Scientists Before the 20th Century', 'url': 'https://en.wikipedia.org/wiki/List_of_female_scientists_before_the_20th_century'},
+      {'id': 5, 'text': 'Timeline of Women in Science', 'url': 'https://en.wikipedia.org/wiki/Timeline_of_women_in_science'},
+      {'id': 6, 'text': 'Marina Poltorak', 'url': 'https://github.com/marinapoltorak'},
+      ]">
+    </slider>
+
       <main>
         <div class="name_and_field">
           <div class="name">
@@ -14,7 +26,6 @@
             {{ scientist.sci_field }}
           </div>
         </div>
-        <hr>
         <div style="text-align:center">
           <img v-bind:src="'http://localhost:8000' + scientist.sci_image"/>
           <div class="big_stuff valign-wrapper">{{ scientist.sci_big_stuff }}</div>
