@@ -5,22 +5,21 @@
       <p>Loading...</p>
     </div>
     <div v-else>
-    <nav>
-      <div class="reload">
-        <a v-on:click="getScientist()"><i class="material-icons">refresh</i></a>
-      </div>
-      <h1>WOMEN IN SCIENCE</h1>
-      <slider :width="350" format="push" direction="left"     :opacity="0.15" :links="[
-      {'id': 1, 'text': 'More Information about this scientist', 'url': scientist.sci_link},
-      {'id': 2, 'text': 'Association For Women In Science', 'url': 'https://www.awis.org/'},
-      {'id': 3, 'text': 'List of Women Scientist, 21st Century', 'url': 'https://en.wikipedia.org/wiki/List_of_female_scientists_in_the_21st_century'},
-      {'id': 4, 'text': 'List of Female Scientists Before the 20th Century', 'url': 'https://en.wikipedia.org/wiki/List_of_female_scientists_before_the_20th_century'},
-      {'id': 5, 'text': 'Timeline of Women in Science', 'url': 'https://en.wikipedia.org/wiki/Timeline_of_women_in_science'},
-      {'id': 6, 'text': 'Marina Poltorak', 'url': 'https://github.com/marinapoltorak'},
-      ]">
-      </slider>
-    </nav>
-
+      <nav>
+        <div class="reload">
+          <a v-on:click="getScientist()"><i class="material-icons">refresh</i></a>
+        </div>
+        <h1>WOMEN IN SCIENCE</h1>
+        <slider :width="350" format="push" direction="left"     :opacity="0.15" :links="[
+        {'id': 1, 'text': 'More Information about this scientist', 'url': scientist.sci_link},
+        {'id': 2, 'text': 'Association For Women In Science', 'url': 'https://www.awis.org/'},
+        {'id': 3, 'text': 'List of Women Scientist, 21st Century', 'url': 'https://en.wikipedia.org/wiki/List_of_female_scientists_in_the_21st_century'},
+        {'id': 4, 'text': 'List of Female Scientists Before the 20th Century', 'url': 'https://en.wikipedia.org/wiki/List_of_female_scientists_before_the_20th_century'},
+        {'id': 5, 'text': 'Timeline of Women in Science', 'url': 'https://en.wikipedia.org/wiki/Timeline_of_women_in_science'},
+        {'id': 6, 'text': 'Marina Poltorak', 'url': 'https://github.com/marinapoltorak'},
+        ]">
+        </slider>
+      </nav>
       <main>
         <div class="name_and_field">
           <div class="name">
